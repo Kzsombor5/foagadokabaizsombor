@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Roomlist from './components/Roomlist'
 import BookingForm from './components/BookingForm'
+import InfoSection from './components/Infosection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className='App'>
       <Header />      
+      <InfoSection />
       <Roomlist />
       <BookingForm />
       <Footer />
