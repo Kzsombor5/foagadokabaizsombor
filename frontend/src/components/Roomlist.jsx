@@ -12,7 +12,7 @@ function Roomlist() {
 
   return (
     <div>
-      <h2>Szobák listája</h2>
+      <h2>A hét törpe fogadó</h2>
       <table>
         <thead>
           <tr>

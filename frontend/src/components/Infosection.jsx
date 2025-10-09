@@ -8,19 +8,18 @@ import holloko from '../img/holloko_masolata.jpg';
 
 function InfoSection() {
   return (
-    <Container className='info-section mt-4'>
-      <Row>
+    <Container fluid className='info-section mt-4'>
+      <Row >
         <Col md={4}>
     
       <h2>Napraforgós Nemzeti Tanúsító Védjegy célja</h2>
       <p>
       A falusi szálláshelyek napraforgós Nemzeti Tanúsító Védjegye a FATOSZ által több mint tíz éve létrehozott, és működtetett minősítési rendszer alapjaira épülve 2011 óta a minőségi falusi turizmus szimbóluma. A védjegy alapvető célja, hogy – összhangban az egyes szálláshelyek működtetéséről szóló 239/2009. Korm. rendeletben foglaltakkal – garanciát nyújtson a szálláshely szolgáltatás minőségének megfelelő színvonalára. A falusi vendégházak 1-4 napraforgós besorolást nyerhetnek el a külső, belső megjelenés, a felszereltség, a szolgáltatások színvonala, valamint a szállásadó személyes felkészültségének, szakmai képzettségének függvényében.
       </p>
-      <a href="https://falusiturizmus.eu/">Tájákoztató oldal</a>
+      <a target='blank' href="https://falusiturizmus.eu/">Tájákoztató oldal</a>
       <br />
       <img src={logo} alt="Logo" className="info-image" />
-      <br />
-      <img src={holloko} alt="Hollókő másolata" className="info-image" />
+      <img src={holloko} alt="Hollókő másolata" className="info-image w-100 mt-5" />
         </Col>
       
       <Col md={4}>
@@ -32,17 +31,19 @@ function InfoSection() {
         <li>Sátorozóhely: csak valamelyik falusi szálláshely típus mellett, mintegy azt kiegészítve üzemeltethető az előírt feltételek megléte esetén. Pl.: falusi vendégház sátorozóhellyel.</li>
       </ul>
       <br />
-      <img src={ketagyas} alt="Kétágyas" className="info-image" />
+      <img src={ketagyas} alt="Kétágyas" className="info-image w-100" />
       </Col>
      
       <Col md={4}>
       
       <Roomlist />
-      <ul>
+      <p>A házban összesen 21 fő fér el.</p>
+      <p>Felszereltségük:</p>
+      <ol>
         <li>Ruhásszekrény</li>
         <li>Saját fürdőszoba zuhanytálcával</li>
         <li>WC (fürdőszobával egyben)</li>
-      </ul>
+      </ol>
       </Col>
       
 

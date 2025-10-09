@@ -1,24 +1,122 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4d4d2f;
+  background-color: #f9f9f9;
+}
+
+
 .info-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: calc(100vh - 100px); 
+  box-sizing: border-box;
+}
+
+
+.info-section .col-md-4 {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+
+.info-section .col-md-4:nth-child(1) {
+  background-color: #f2f0e6;
+}
+
+
+.info-section .col-md-4:nth-child(2) {
+  background-color: #ffffff;
+}
+
+
+.info-section .col-md-4:nth-child(3) {
+  background-color: #f2f0e6;
+}
+
+
+.info-section h2 {
+  color: #3b3a26;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d7d5a4;
+  padding-bottom: 5px;
+}
+
+
+.info-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+.info-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.info-section ul li {
+  margin-bottom: 8px;
+}
+
+
+.info-section a {
+  color: #2c472d;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.info-section a:hover {
+  color: #1e341f;
+  text-decoration: none;
+}
+
+
+.info-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #f2f0e6;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.info-section th,
+.info-section td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.info-section th {
+  background-color: #e3e1d1;
+  color: #3b3a26;
+}
+
+.info-section tr:nth-child(even) {
+  background-color: #e3e1d1;
+}
+
+.info-section td {
+  color: #4d4d2f;
+  
+}
+
+
+@media (max-width: 992px) {
+  .info-section {
+    flex-direction: column;
+  }
+
+  .info-section .col-md-4 {
     padding: 20px;
-    background-color: #f9f9f9;
-    margin: 20px;
-    border: 1px solid #ddd;
   }
-  
-  .info-section h2 {
-    color: #333;
-  }
-  
-  .info-section p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .info-section ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  .info-section ul li {
-    margin-bottom: 10px;
-  }
+}

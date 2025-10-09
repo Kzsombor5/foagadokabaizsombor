@@ -45,6 +45,14 @@ app.get("/hettorpe", (req, res) => {
     })
   });
 
+  app.get("/szobak", (req, res) => { 
+    const sql = "SELECT sznev FROM szobak";
+    dbPool.query(sql, (err, result) => {
+        if (err) return res.json(err);
+        return res.json(result);
+    })
+  });
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
