@@ -5,28 +5,28 @@ function BookingForm() {
     const [bookings, setBookings] = useState([]);
   
     useEffect(() => {
-      axios.get('http://localhost:3001/foglaltsag')
+      axios.get('http://localhost:3001/kihasznaltsag')
         .then(response => setBookings(response.data))
         .catch(error => console.error(error));
     }, []);
   
     return (
       <div>
-        <h2>Foglaltsági adatok</h2>
+        <h2>A szobák kihasználtsága</h2>
         <table>
           <thead>
             <tr>
-              <th>Vendég neve</th>
-              <th>Érkezés</th>
-              <th>Távozás</th>
+              <th>Szoba neve</th>
+              <th>Vendégek száma</th>
+              <th>Vendégéjszakák száma</th>
             </tr>
           </thead>
           <tbody>
             {bookings.map((booking, index) => (
               <tr key={index}>
-                <td>{booking.vnev}</td>
-                <td>{booking.erk}</td>
-                <td>{booking.tav}</td>
+                <td>{booking.sznev}</td>
+                <td>{booking.vendeg}</td>
+                <td>{booking.vendegejszakak}</td>
               </tr>
             ))}
           </tbody>

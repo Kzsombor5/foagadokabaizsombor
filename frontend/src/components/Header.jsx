@@ -1,7 +1,8 @@
+import top from '../img/top.jpg';
 function Header() {
   return (
     <header className="header">
-      <h1>A hét törpe fogadó</h1>
+      <img src={top} alt="Napraforgós védjegy" className="info-image" />
     </header>
   );
 }
