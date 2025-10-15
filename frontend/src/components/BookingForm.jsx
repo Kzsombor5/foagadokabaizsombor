@@ -37,7 +37,7 @@ function BookingForm() {
         <Col md={6}>
           <Form onSubmit={handleSubmit} style={{ maxWidth: '400px' }}>
             <Form.Group controlId="roomSelect" className="mb-3">
-              <Form.Label>A vendégszobák foglaltsága</Form.Label>
+              <h3>A vendégszobák foglaltsága</h3>
               <Form.Select value={selectedRoom} onChange={handleChange} aria-label="Szoba kiválasztása">
                 <option value="">Válassza ki, melyik szoba adatait szeretné látni:</option>
                 {Array.isArray(rooms) && rooms.map((room, index) => (
@@ -53,7 +53,7 @@ function BookingForm() {
         </Col>
         <Col md={6}>
           <div>
-            <h2>A szobák kihasználtsága</h2>
+            <h3>A szobák kihasználtsága</h3>
             <table>
               <thead>
                 <tr>
